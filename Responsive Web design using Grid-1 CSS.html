@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    .header{
+        background-color: coral;
+        color: white;
+        padding: 1% 5%;
+        text-align: center;
+    }
+
+    .nav-menu{
+        padding: 1% 5%;
+        background-color: teal;
+    }
+
+    .nav-menu a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 10px;
+        display: block;
+    }
+
+    .main{
+        padding: 1% 5%;
+        background-color: tomato;
+    }
+
+    .aside{
+        background-color: turquoise;
+        padding: 1% 5%;
+        text-align: center;
+    }
+
+    .footer{
+        background-color: crimson;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+/* for mobile */
+  [calss*="col-"]{
+          width: 100%;
+      }
+
+  [class*="col-"]{
+      float: left;
+      padding: 10px;
+
+  }
+
+  .row::after{
+      content: '';
+      clear: both;
+      display: table;
+  }
+
+  @media screen and (min-width:600px) {
+
+/*w3school RWD Media quarise*/
+/* For Tablet */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+
+}
+
+
+  @media screen and (min-width:768px) {
+
+      /*w3school RWD Media quarise*/
+      /* For Desktop */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+     
+      .nav-menu a{
+        
+       text-align: center;
+       background-color: cyan;
+       margin: 10px;
+    }
+
+  }
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Mishu Deb Nath</h1>
+    </div>
+
+    <div class="row">
+        <div class="nav-menu col-s-3 col-2">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="main col-s-6 col-6">
+            <h1>I am a web designer</h1>
+            <p>Labore stet rebum sit ipsum sadipscing, est lorem accusam dolor sit aliquyam ipsum, at et sed et sit eirmod diam.Sadipscing eos diam voluptua gubergren tempor sed dolores dolor justo ut. Nonumy amet dolor voluptua erat consetetur est dolor, dolores sadipscing invidunt kasd magna gubergren sit sanctus sed, accusam ea lorem tempor amet, no at amet sed amet accusam invidunt, sit no sanctus rebum dolores, vero erat tempor takimata dolor.</p>
+            <p>Gubergren sed dolores justo diam no, eos magna no rebum sanctus dolores stet dolores, stet erat at labore ipsum sit. Tempor stet stet labore lorem lorem dolore takimata. Stet lorem justo takimata dolor sit duo nonumy et, dolor sadipscing gubergren no sanctus voluptua dolor, justo consetetur elitr consetetur erat consetetur.</p>
+            <p>Labore stet rebum sit ipsum sadipscing, est lorem accusam dolor sit aliquyam ipsum, at et sed et sit eirmod diam.Elitr takimata clita lorem lorem sed sit eos et clita. Eirmod at amet at vero. Kasd nonumy et nonumy aliquyam erat dolor, sed diam diam kasd voluptua aliquyam no elitr. Erat lorem ipsum invidunt elitr justo ea. Lorem ut sanctus voluptua et. Elitr erat ipsum magna consetetur aliquyam erat, amet.</p>
+        </div>
+
+        <div class="aside col-s-12 col-3">
+            <h2>What I love?</h2>
+            <p>Tempor ea stet diam invidunt lorem no sit voluptua accusam. Eirmod clita amet sed amet. Ea kasd no accusam ipsum.</p>
+
+            <h2>What I Do?</h2>
+            <p>Tempor ea stet diam invidunt lorem no sit voluptua accusam. Eirmod clita amet sed amet. Ea kasd no accusam ipsum.</p>
+
+            <h2>What I don't Do?</h2>
+            <p>Tempor ea stet diam invidunt lorem no sit voluptua accusam. Eirmod clita amet sed amet. Ea kasd no accusam ipsum.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; Study with Mishu 2021. Developed By Mishu Deb Nath
+    </div>
+</body>
+</html>
